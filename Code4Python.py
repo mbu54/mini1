@@ -1,10 +1,10 @@
 import tweepy
 
 #Twitter API credentials
-consumer_key = "epSN7DLvzimhRPbFikys8n1Vb"
-consumer_secret = "r6MnsK1VLPnSopb9RUakdKvqHGW0WfVbqqiicfX6ZofJrJvzlO"
-access_key = "1171550663857332226-VOPUcYhjRmVD9KnaNp8PUtC8ABMWkw"
-access_secret = "pQVMIyzT354TbGfwH99g1f0j2K29ZpesLZZ4wXYdGvQtG"
+consumer_key = ""
+consumer_secret = ""
+access_key = ""
+access_secret = ""
 
 def get_tweet():
   twitter_feed = []
