@@ -4,10 +4,10 @@ import tweepy as tw
 import pandas as pd
 
 #Twitter API credentials
-consumer_key = ""
-consumer_secret = ""
-access_key = ""
-access_secret = ""
+consumer_key = "..."
+consumer_secret = "..."
+access_key = "..."
+access_secret = "..."
 
 def get_tweet(username):
   twitter_feed = []
