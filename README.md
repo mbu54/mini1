@@ -31,7 +31,7 @@ In order to get different sentiment orientation of posts, we need to apply the s
 * 		5.  Williams C, Gulati G (2008) What is a social network worth? Facebook and vote share in the 2008 presidential primaries. In the annual meeting of the American political science association. Boston, MA: 1–17.	
 * 		6.  Eirinaki M, Pisal S, Singh J (2012) Feature-based opinion mining and ranking. Journal of Computer and System Sciences 78: 1175–1184.https://www.sciencedirect.com/science/article/pii/S0022000011001139
 
-*   7.	Zhi HD, Kun HL, Hong LY (2014) A study of supervised term weighting scheme for sentiment analysis. Expert Systems with Applications.41:3506–3513 https://www.sciencedirect.com/science/article/pii/S0957417413008737
+*  		7.  Zhi HD, Kun HL, Hong LY (2014) A study of supervised term weighting scheme for sentiment analysis. Expert Systems with Applications.41:3506–3513 https://www.sciencedirect.com/science/article/pii/S0957417413008737
 
 
 
