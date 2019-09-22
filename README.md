@@ -19,3 +19,24 @@ In order to get different sentiment orientation of posts, we need to apply the s
 
 ![image](https://github.com/mbu54/mini1/blob/master/IMG/Architecture.jpg)
 ![image](https://github.com/mbu54/mini1/blob/master/IMG/EC601_py.jpg)
+
+ 
+  
+ <h2>References:</h2>
+
+* 		1.  Balali A, Faili H, Asadpour M (2014) A Supervised Approach to Predict the Hierarchical Structure of Conversation Threads for Comments. Scientific World Journal: 23: 479746  https://www.hindawi.com/journals/tswj/2014/479746/abs/ 
+* 		2. Bai X (2011) Predicting consumer sentiments from online text. Decision Support Systems 50: 732–742.https://www.sciencedirect.com/science/article/pii/S016792361000148X
+* 		3.  Liu Y, Huang X, An A, Yu X (2007) ARSA: A sentiment-aware model for predicting sales performance using blogs, In Proceedings of the 30th annual international ACM SIGIR conference on research and development in information retrieval, New York: 607–614.https://journals.sagepub.com/doi/abs/10.1177/1461444811422894
+* 		4.  Larsson AO, Moe H (2012) Studying political microblogging: Twitter users in the 2010 Swedish election campaign. New Media & Society 14: 729–747.https://journals.sagepub.com/doi/abs/10.1177/1461444811422894
+* 		5.  Williams C, Gulati G (2008) What is a social network worth? Facebook and vote share in the 2008 presidential primaries. In the annual meeting of the American political science association. Boston, MA: 1–17.	
+* 		6.  Eirinaki M, Pisal S, Singh J (2012) Feature-based opinion mining and ranking. Journal of Computer and System Sciences 78: 1175–1184.https://www.sciencedirect.com/science/article/pii/S0022000011001139
+
+*   7.	Zhi HD, Kun HL, Hong LY (2014) A study of supervised term weighting scheme for sentiment analysis. Expert Systems with Applications.41:3506–3513 https://www.sciencedirect.com/science/article/pii/S0957417413008737
+
+
+
+			
+      
+ 
+   
+   
