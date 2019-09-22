@@ -18,7 +18,7 @@ With the development of Internet, millions of web users spend hours a day on the
 In order to get different sentiment orientation of posts, we need to apply the sentiment analysis approach, whose one of purposes is to classify the attitude expressed in the text (such as positive or negative) [8]In order to get different sentiment orientation of posts, we need to apply the sentiment analysis approach, whose one of purposes is to classify the attitude expressed in the text (such as positive or negative) [8]
 
 <h2>Procedure:</h2>
-![image](https://github.com/mbu54/mini1/blob/master/Architecture.jpg)
+![image](https://github.com/mbu54/mini1/blob/master/IMG/Architecture.jpg)
 
 
 <h2>References:</h2>
