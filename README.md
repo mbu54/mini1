@@ -13,9 +13,9 @@ In order to get different sentiment orientation of posts, we need to apply the s
  
   
 <h2>User Story:</h2>  
- 1.	As a politician (Trump, Democratic prez candidate, etc.), I want to be able to track the live twitter reaction during       a big public event like a debate or press conference. 
+ 1.As a politician (Trump, Democratic prez candidate, etc.), I want to be able to track the live twitter reaction during       a big public event like a debate or press conference. 
   
- 2.	As a star sports player (football- Tom Brady, Basketball- Lebron James, Soccer- Messi) I want to be able to track the live twitter reaction during a game/season.
+ 2.As a star sports player (football- Tom Brady, Basketball- Lebron James, Soccer- Messi) I want to be able to track the live twitter reaction during a game/season.
 
  
   
