@@ -1,4 +1,4 @@
-# Mini1 Project 1 --- A Effective Time-Variating Sentiment Evaluating Tool Towards Specific Based On Twitter Api 
+# Mini1 Project 1 --- A Effective Time-Variating Sentiment Evaluating Tool Towards Specific Based On Twitter API
 
 <h2>Abstract:</h2>
 nowadays, social media has generated significant impact on people’s life from public to everyone’s life. 	every individual can share and spread their sentiment and altitude towards events and heart point, and some of which are positive and some are negtive. Researching on these altitudes are quite valuable.  By using the sentiment evaluating tools, the user can grab people’s altitude and make in time adjustment to their behavior. In this project, a tool base on Twitter has been applied to meet the demands. 
@@ -9,19 +9,12 @@ With the development of Internet, millions of web users spend hours a day on the
 
 In order to get different sentiment orientation of posts, we need to apply the sentiment analysis approach, whose one of purposes is to classify the attitude expressed in the text (such as positive or negative) [8]In order to get different sentiment orientation of posts, we need to apply the sentiment analysis approach, whose one of purposes is to classify the attitude expressed in the text (such as positive or negative) [8]
 
-<h2>Procedure:</h2>
- 
-  
-<h2>User Story:</h2>  
+<h2> Story:</h2>
  1.As a politician (Trump, Democratic prez candidate, etc.), I want to be able to track the live twitter reaction during       a big public event like a debate or press conference. 
-  
  2.As a star sports player (football- Tom Brady, Basketball- Lebron James, Soccer- Messi) I want to be able to track the live twitter reaction during a game/season.
-
  
-  
-  
-   
-
+<h2>Architecture&Flowchat:</h2>
+ 
 
 
 ![image](https://github.com/mbu54/mini1/blob/master/IMG/Architecture.jpg)
@@ -29,7 +22,7 @@ In order to get different sentiment orientation of posts, we need to apply the s
 
  
   
- <h2>References:</h2>
+<h2>References:</h2>
 
 * 		1.  Balali A, Faili H, Asadpour M (2014) A Supervised Approach to Predict the Hierarchical Structure of Conversation Threads for Comments. Scientific World Journal: 23: 479746  https://www.hindawi.com/journals/tswj/2014/479746/abs/ 
 * 		2. Bai X (2011) Predicting consumer sentiments from online text. Decision Support Systems 50: 732–742.https://www.sciencedirect.com/science/article/pii/S016792361000148X
