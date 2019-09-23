@@ -14,7 +14,7 @@ In order to get different sentiment orientation of posts, we need to apply the s
  
  2.As a star sports player (football- Tom Brady, Basketball- Lebron James, Soccer- Messi) I want to be able to track the live twitter reaction during a game/season.
  
-<h2>Architecture&Flowchat:</h2>
+<h2>Architecture&Flowchart:</h2>
  
 
 
