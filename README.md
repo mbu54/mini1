@@ -9,7 +9,7 @@ With the development of Internet, millions of web users spend hours a day on the
 
 In order to get different sentiment orientation of posts, we need to apply the sentiment analysis approach, whose one of purposes is to classify the attitude expressed in the text (such as positive or negative) [8]In order to get different sentiment orientation of posts, we need to apply the sentiment analysis approach, whose one of purposes is to classify the attitude expressed in the text (such as positive or negative) [8]
 
-<h2> Story:</h2>
+<h2>User Story:</h2>
  1.As a politician (Trump, Democratic prez candidate, etc.), I want to be able to track the live twitter reaction during       a big public event like a debate or press conference.  
  
  2.As a star sports player (football- Tom Brady, Basketball- Lebron James, Soccer- Messi) I want to be able to track the live twitter reaction during a game/season.
@@ -18,8 +18,12 @@ In order to get different sentiment orientation of posts, we need to apply the s
  
 
 
-![image](https://github.com/mbu54/mini1/blob/master/IMG/Architecture.jpg)
+![image](https://github.com/mbu54/mini1/blob/master/IMG/Architecture.jpg) 
+This project is based on PC. The tool search for Twitter content and the corresponding	time by using Twitter API. The collected contentdata was then convert to the easy-read type for the Google API, while the time would be analyzed with analyzed data from the Google NLP Engine. The final result would be displayed in user end.
+
 ![image](https://github.com/mbu54/mini1/blob/master/IMG/EC601_py.jpg)
+The diagram shows how the Twitter program works. There are three types functions named Hashtags Searching,  Twitter Time Grab and User Timeline Grab. Timeline function are not used in the program. The desired data from the hashtags are time and content, the other repeated information such as “https://XXXX.XXX.XXX” should be striped. These two ruction would return data and time with easy-read data type for further analysis.
+
 
  
   
