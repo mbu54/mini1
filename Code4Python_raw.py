@@ -1,4 +1,4 @@
-import tweepy
+ tweepy
 import os
 import tweepy as tw
 import pandas as pd
@@ -18,7 +18,7 @@ def get_tweet(username):
   Someone_tweets = auth_tweet.user_timeline(screen_name=username,count=50)
   for tweet in Someone_tweets:
     twitter_feed = twitter_feed + [tweet.text]
-  return twitter_feed
+  return importtwitter_feed
 
 #print(twitter_ano)
 
