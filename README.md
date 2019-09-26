@@ -1,4 +1,4 @@
-# Mini1 Project 1 --- A Effective Time-Variating Sentiment Evaluating Tool Towards Specific Based On Twitter API
+# Mini1 Project 1 --- A Effective Time-Variating Sentiment Evaluating Tool Towards Specific Topic Based on Twitter API
 
 <h2>Abstract:</h2>
 nowadays, social media has generated significant impact on people’s life from public to everyone’s life. 	every individual can share and spread their sentiment and altitude towards events and heart point, and some of which are positive and some are negtive. Researching on these altitudes are quite valuable.  By using the sentiment evaluating tools, the user can grab people’s altitude and make in time adjustment to their behavior. In this project, a tool base on Twitter has been applied to meet the demands. 
@@ -14,7 +14,7 @@ In order to get different sentiment orientation of posts, we need to apply the s
  
  2.As a star sports player (football- Tom Brady, Basketball- Lebron James, Soccer- Messi) I want to be able to track the live twitter reaction during a game/season.
  
-<h2>Architecture&Flowchat:</h2>
+<h2>Architecture&Flowchart:</h2>
  
 
 
