@@ -17,9 +17,9 @@ def get_tweet(username):
   auth = tw.OAuthHandler(consumer_key, consumer_secret)
   auth.set_access_token(access_key,access_secret)
   auth_tweet = tw.API(auth)
-  Someone_tweets = auth_tweet.user_timeline(screen_name=username,count=50)
+  Someone_tweets = auth_tweet.user_timeline(screen_name=username,count=10,tweet_mode="extended")
   for tweet in Someone_tweets:
-    twitter_feed = twitter_feed + [tweet.text]
+    twitter_feed = twitter_feed + [tweet.full_text]
   return twitter_feed
 
 #print(twitter_ano)
@@ -31,7 +31,7 @@ def hashtags(search_words,date_since,date_until):
   auth = tw.OAuthHandler(consumer_key, consumer_secret)
   auth.set_access_token(access_key,access_secret)
   api = tw.API(auth, wait_on_rate_limit=True)
-  tweets = tw.Cursor(api.search,q=search_words,lang="en",since=date_since,until=date_until).items(30)
+  tweets = tw.Cursor(api.search,q=search_words,lang="en",since=date_since,until=date_until).items(10)
   # Iterate and print tweets
   for tweet_tag in tweets:
     #twitter_ctime=twitter_emp+[tweet_tag.created_at]
@@ -45,7 +45,7 @@ def hashtags_ctime(search_words,date_since,date_until):
   auth = tw.OAuthHandler(consumer_key, consumer_secret)
   auth.set_access_token(access_key,access_secret)
   api = tw.API(auth, wait_on_rate_limit=True)
-  tweets = tw.Cursor(api.search,q=search_words,lang="en",tweet_mode="extended",since=date_since,until=date_until).items(10)
+  tweets = tw.Cursor(api.search,q=search_words,lang="en",since=date_since,until=date_until).items(10)
   # Iterate and print tweets
   for tweet_tag in tweets:
     #twitter_ctime=twitter_emp+[tweet_tag.created_at]
@@ -55,7 +55,8 @@ def hashtags_ctime(search_words,date_since,date_until):
 #Content for sb Timeline
 twitter_results=get_tweet("@realDonaldTrump") 
 for i in range(10):
-  print(twitter_results[i].full_text)
+  print(i, ":",twitter_results[i])
+print(len(twitter_results))
 
 #Content for Harhstags
 wanted_words = "#wildfires"
