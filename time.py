@@ -56,7 +56,7 @@ def hashtags_ctime(search_words,date_since,date_until):
 twitter_results=get_tweet("@realDonaldTrump") 
 for i in range(10):
   print(i, ":",twitter_results[i])
-print(len(twitter_results))
+
 
 #Content for Harhstags
 wanted_words = "#wildfires"
