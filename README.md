@@ -10,6 +10,12 @@ With the development of Internet, millions of web users spend hours a day on the
 In order to get different sentiment orientation of posts, we need to apply the sentiment analysis approach, whose one of purposes is to classify the attitude expressed in the text (such as positive or negative) [8]In order to get different sentiment orientation of posts, we need to apply the sentiment analysis approach, whose one of purposes is to classify the attitude expressed in the text (such as positive or negative) [8]
 
 <h2>User Story:</h2>
+The MVP in this project is to get sentiment analysis in a time period and using statistic method to analysis people’s altitude towards specific heat points and how their sentiments changes over time.
+
+<h2>Target Users:</h2>
+This tool is designed for people who want to analyze people’s altitude towards specific topic. Politician could change their election strategies according to the sentiment analysis result; movie actor/actress can evaluate his/her performance by the commits on Twitter. 
+
+<h2>User Story:</h2>
  1.As a politician (Trump, Democratic prez candidate, etc.), I want to be able to track the live twitter reaction during       a big public event like a debate or press conference.  
  
  2.As a star sports player (football- Tom Brady, Basketball- Lebron James, Soccer- Messi) I want to be able to track the live twitter reaction during a game/season.
