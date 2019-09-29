@@ -19,7 +19,10 @@ def get_tweet(username):
   auth_tweet = tw.API(auth)
   Someone_tweets = auth_tweet.user_timeline(screen_name=username,count=10,tweet_mode="extended")
   for tweet in Someone_tweets:
-    twitter_feed = twitter_feed + [tweet.full_text]
+    if "retweeted_status" in tweet._json:
+      twitter_feed = twitter_feed + [tweet._json["retweeted_status"]["full_text"]]
+    else:
+      twitter_feed = twitter_feed + [tweet.full_text]
   return twitter_feed
 
 #print(twitter_ano)
@@ -85,10 +88,11 @@ i = 0
 for s in twitter_results:
   twitter_results[i] = s.replace("@","")
   i += 1
-'''
+
 for i in range(len(twitter_results)):
-  print(i,twitter_results[i],)
-'''
+  print(i,twitter_results[i])
+  print()
+
 #strip http for hashtags
 i = 0
 for s in twitter_tag_content:
@@ -107,11 +111,11 @@ i = 0
 for s in twitter_tag_content:
   twitter_tag_content[i] = s.replace("@","")
   i += 1
-
+'''
 for i in range(len(twitter_tag_content)):
   print(i,twitter_tag_content[i])
   print()
-#print(twitter_ano2)
+'''
 
 #strip datetime.datetime for hashtags
 twitter_ano3=[]
