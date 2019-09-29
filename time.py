@@ -13,6 +13,7 @@ access_secret = codes.ac
 
 def get_tweet(username):
   twitter_feed = []
+  twitter_feed_time = []
   # Authorize 
   auth = tw.OAuthHandler(consumer_key, consumer_secret)
   auth.set_access_token(access_key,access_secret)
@@ -21,9 +22,11 @@ def get_tweet(username):
   for tweet in Someone_tweets:
     if "retweeted_status" in tweet._json:
       twitter_feed = twitter_feed + [tweet._json["retweeted_status"]["full_text"]]
+      twitter_feed_time = twitter_feed_time + [tweet.created_at]
     else:
       twitter_feed = twitter_feed + [tweet.full_text]
-  return twitter_feed
+      twitter_feed_time = twitter_feed_time + [tweet.created_at]
+  return twitter_feed, twitter_feed_time
 
 #print(twitter_ano)
 
@@ -57,7 +60,7 @@ def hashtags_ctime(search_words,date_since,date_until):
   return twitter_ctime
 
 #Content for sb Timeline
-twitter_results=get_tweet("@realDonaldTrump") 
+twitter_results,twitter_results_time=get_tweet("@realDonaldTrump") 
 '''
 for i in range(10):
   print(i, ":",twitter_results[i])
@@ -73,8 +76,8 @@ twitter_created_time=hashtags_ctime(wanted_words,wangted_date_since,wangted_date
 #strip http for sb  
 i = 0
 for s in twitter_results:
-  if s.find('https')>0:
-    s=s[0:s.find('https')-1]
+  if s.find('https')>=0:
+    s=s[0:s.find('https')]
     #print(s)
     twitter_results[i] = s
   i += 1
@@ -90,13 +93,13 @@ for s in twitter_results:
   i += 1
 
 for i in range(len(twitter_results)):
-  print(i,twitter_results[i])
+  print(i,':',twitter_results_time[i],':',twitter_results[i])
   print()
 
 #strip http for hashtags
 i = 0
 for s in twitter_tag_content:
-  if s.find('https')>0:
+  if s.find('https')>=0:
     s=s[0:s.find('https')-1]
     #print(s)
     twitter_tag_content[i] = s
