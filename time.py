@@ -31,12 +31,13 @@ def hashtags(search_words,date_since,date_until):
   auth = tw.OAuthHandler(consumer_key, consumer_secret)
   auth.set_access_token(access_key,access_secret)
   api = tw.API(auth, wait_on_rate_limit=True)
-  tweets = tw.Cursor(api.search,q=search_words,lang="en",since=date_since,until=date_until).items(10)
+  tweets = tw.Cursor(api.search,q=search_words,lang="en",since=date_since,until=date_until,tweet_mode="extended").items(10)
   # Iterate and print tweets
   for tweet_tag in tweets:
-    #twitter_ctime=twitter_emp+[tweet_tag.created_at]
-    #print(tweet_tag.text)
-    twitter_emp=twitter_emp+[tweet_tag.text]
+    if "retweeted_status" in tweet_tag._json:
+      twitter_emp = twitter_emp + [tweet_tag._json["retweeted_status"]["full_text"]]
+    else:
+      twitter_emp=twitter_emp+[tweet_tag.full_text]
   return twitter_emp
   
 def hashtags_ctime(search_words,date_since,date_until):
@@ -54,32 +55,62 @@ def hashtags_ctime(search_words,date_since,date_until):
 
 #Content for sb Timeline
 twitter_results=get_tweet("@realDonaldTrump") 
+'''
 for i in range(10):
   print(i, ":",twitter_results[i])
-
+'''
 
 #Content for Harhstags
-wanted_words = "#wildfires"
-wangted_date_since = "2019-09-17"
-wangted_date_until = "2019-09-20"
-twiter_tag_content=hashtags(wanted_words,wangted_date_since,wangted_date_until)
+wanted_words = "#trump"
+wangted_date_since = "2019-09-27"
+wangted_date_until = "2019-09-28"
+twitter_tag_content=hashtags(wanted_words,wangted_date_since,wangted_date_until)
 twitter_created_time=hashtags_ctime(wanted_words,wangted_date_since,wangted_date_until)
 #print(twitter_created_time)
 #strip http for sb  
-twitter_ano1=[]
+i = 0
 for s in twitter_results:
   if s.find('https')>0:
     s=s[0:s.find('https')-1]
     #print(s)
-    twitter_ano1.append(s)
-
+    twitter_results[i] = s
+  i += 1
+#strip # signs
+i = 0
+for s in twitter_results:
+  twitter_results[i] = s.replace("#","")
+  i += 1
+#strip @ signs
+i = 0
+for s in twitter_results:
+  twitter_results[i] = s.replace("@","")
+  i += 1
+'''
+for i in range(len(twitter_results)):
+  print(i,twitter_results[i],)
+'''
 #strip http for hashtags
-twitter_ano2=[]
-for s in twiter_tag_content:
+i = 0
+for s in twitter_tag_content:
   if s.find('https')>0:
     s=s[0:s.find('https')-1]
-   # print(s)
-    twitter_ano2.append(s)
+    #print(s)
+    twitter_tag_content[i] = s
+  i += 1
+#strip # signs
+i = 0
+for s in twitter_tag_content:
+  twitter_tag_content[i] = s.replace("#","")
+  i += 1
+#strip @ signs
+i = 0
+for s in twitter_tag_content:
+  twitter_tag_content[i] = s.replace("@","")
+  i += 1
+
+for i in range(len(twitter_tag_content)):
+  print(i,twitter_tag_content[i])
+  print()
 #print(twitter_ano2)
 
 #strip datetime.datetime for hashtags
