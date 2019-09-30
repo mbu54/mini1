@@ -7,6 +7,10 @@ import twitter_codes as codes
 from google.cloud import language_v1
 from google.cloud.language_v1 import enums
 import six
+import matplotlib.pyplot as plt
+from matplotlib.dates import (YEARLY, DateFormatter, rrulewrapper, RRuleLocation, drange)
+import numpy as np
+import datetime
 
 #Twitter API credentials
 consumer_key = codes.ck
@@ -113,7 +117,7 @@ def hashtagtweets(hash_tag,wanted_date_since,wanted_date_until):
   '''
   return twitter_tag_content, twitter_tag_content_time
 
-def sample_analyze_sentiment(content):
+def sentiment_analysis(content):
 
   client = language_v1.LanguageServiceClient()
 
@@ -127,18 +131,31 @@ def sample_analyze_sentiment(content):
 
   response = client.analyze_sentiment(document)
   sentiment = response.document_sentiment
-  print('Score: {}'.format(sentiment.score))
-  print('Magnitude: {}'.format(sentiment.magnitude))
+  return sentiment.score
+  #print('Score: {}'.format(sentiment.score))
+  #print('Magnitude: {}'.format(sentiment.magnitude))
+
+def get_sentiment(text_list):
+  sentiment_list = []
+
+  for i in range(len(text_list)):
+    sentiment_list.append(sentiment_analysis(text_list[i]))
+
+  return sentiment_list
 
 
 handle = "@realDonaldTrump"
+'''
 hash_tag = "#trump"
 wanted_date_since = "2019-09-27"
 wanted_date_until = "2019-09-28"
+'''
 tweet_text,tweet_time = handletweets(handle)
+tweet_sentiment = get_sentiment(tweet_text)
+
 #tweet_text2,tweet_time2 = hashtagtweets(hash_tag,wanted_date_since,wanted_date_until)
 
 for i in range(len(tweet_text)):
   print(tweet_time[i], ":", tweet_text[i])
+  print(tweet_time[i], ":", tweet_sentiment[i])
   print()
-
