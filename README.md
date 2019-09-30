@@ -28,14 +28,17 @@ This tool is designed for people who want to analyze a specific person’s chang
 The program is primarily stored in the file: time.py. Edit the code on lines 146 and 147 to select the twitter handle you want to analyze and the number of tweets you want to be analyzed. The code will not run if you do not enter in the proper credential information. Enter your twitter keys in the file twitter_codes.py and they will be imported to time.py file. In the terminal you are working in type "export GOOGLE_APPLICATION_CREDENTIALS = 'PATH'" where 'PATH' is the path to where your google credentials are stored in the computer. In the terminal if you type "python time.py" it should output your time trend sentiment graph for the twitter handle you provided.
 
 ![image](https://github.com/mbu54/mini1/blob/master/Trump500Tweets.png)
+
 This is a sample output of the program for the handle: @realDonaldTrump pulling his last 500 tweets.
 
 <h2>Architecture and Flowchart:</h2>
  
 ![image](https://github.com/mbu54/mini1/blob/master/IMG/Architecture.jpg) 
+
 This project is based on PC. The tool search for Twitter content and the corresponding	time by using Twitter API. The collected contentdata was then convert to the easy-read type for the Google API, while the time would be analyzed with analyzed data from the Google NLP Engine. The final result would be displayed in user end.
 
 ![image](https://github.com/mbu54/mini1/blob/master/IMG/EC601_py.jpg)
+
 The diagram shows how the Twitter program works. There are three types functions named Hashtags Searching,  Twitter Time Grab and User Timeline Grab. Timeline function are not used in the program. The desired data from the hashtags are time and content, the other repeated information such as “https://XXXX.XXX.XXX” should be striped. These two ruction would return data and time with easy-read data type for further analysis.
 
 
