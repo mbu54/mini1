@@ -4,7 +4,7 @@
 nowadays, social media has generated significant impact on people’s life from public to everyone’s life. 	every individual can share and spread their sentiment and altitude towards events and heart point, and some of which are positive and some are negtive. Researching on these altitudes are quite valuable.  By using the sentiment evaluating tools, the user can grab people’s altitude and make in time adjustment to their behavior. In this project, a tool base on Twitter has been applied to meet the demands. 
 
 
-<h2>introduction:</h2>
+<h2>Introduction:</h2>
 With the development of Internet, millions of web users spend hours a day on the website, especially on social networks. By December 2013, the number of Chinese internet users reached 618 million. The usage rate of social web is 45.0% (CNNIC33). People read news and write their views and opinions about online hot events and commodities [1]. Therefore, people’s posts constitute online public opinions. These opinions and views reflect people’s sentiments. The sentiments in social networks can affect people’s purchase behavior [2], the sellers’ marketing plan [3], political trends [4, 5] and effectively forecast stock market [6]. Moreover, many online hot events change trends with time going by. With the development of the events and increasing comments, the sentiment of users contained in the comments also varies.
 
 In order to get different sentiment orientation of posts, we need to apply the sentiment analysis approach, whose one of purposes is to classify the attitude expressed in the text (such as positive or negative) [8]In order to get different sentiment orientation of posts, we need to apply the sentiment analysis approach, whose one of purposes is to classify the attitude expressed in the text (such as positive or negative) [8]
@@ -16,6 +16,7 @@ The MVP in this project is to get sentiment analysis in a time period and analys
 This tool is designed for people who want to analyze a specific person’s change over time. You could track how a specific politician's sentiment changes throughout their campaign or time in office. With more commputing power, the program could easily be changed to analyze how people twitter view Politician's. Politician could change their election strategies according to the sentiment analysis result; movie actor/actress can evaluate his/her performance by the comments on Twitter. 
 
 <h2>User Story:</h2>
+
  1. As a politician (Trump, Democratic Prez Candidate, etc.), I want to be able to track the live twitter reaction during a big public event like a debate or press conference.  
  
  2. As a star sports player (Football- Tom Brady, Basketball- Lebron James, Soccer- Messi) I want to be able to track the live twitter reaction during a game/season.
