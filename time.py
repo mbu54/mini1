@@ -143,8 +143,8 @@ def get_sentiment(text_list):
   return sentiment_list
 
 
-handle = "@realDonaldTrump" #CHANGE THIS
-number_tweets = 500 #CHANGE THIS
+handle = "@BarackObama" #CHANGE THIS
+number_tweets = 50 #CHANGE THIS
 '''
 hash_tag = "#trump"
 wanted_date_since = "2019-09-27"
@@ -160,6 +160,9 @@ for i in range(len(tweet_text)):
   print(tweet_time[i], ":", tweet_sentiment[i])
   print()
 '''
+sentiment_mean = sum(tweet_sentiment)/len(tweet_sentiment)
+print("The average sentiment of",handle, "over the last",number_tweets,"tweets is",sentiment_mean)
+# plot the sentiment
 fig, ax = plt.subplots()
 plt.plot_date(tweet_time, tweet_sentiment)
 ax.xaxis.set_tick_params(rotation=30, labelsize=10)
