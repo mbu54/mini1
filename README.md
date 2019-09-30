@@ -1,7 +1,7 @@
 # Mini1 Project 1 --- A Effective Time-Variating Sentiment Evaluating Tool Towards Specific Topic Based on Twitter API
 
 <h2>Abstract:</h2>
-nowadays, social media has generated significant impact on people’s life from public to everyone’s life. 	every individual can share and spread their sentiment and altitude towards events and heart point, and some of which are positive and some are negtive. Researching on these altitudes are quite valuable.  By using the sentiment evaluating tools, the user can grab people’s altitude and make in time adjustment to their behavior. In this project, a tool base on Twitter has been applied to meet the demands. 
+Nowadays, social media has generated significant impact on people’s life from public to everyone’s life. 	every individual can share and spread their sentiment and altitude towards events and heart point, and some of which are positive and some are negtive. Researching on these altitudes are quite valuable.  By using the sentiment evaluating tools, the user can grab people’s altitude and make in time adjustment to their behavior. In this project, a tool base on Twitter has been applied to meet the demands. 
 
 
 <h2>Introduction:</h2>
@@ -25,11 +25,11 @@ This tool is designed for people who want to analyze a specific person’s chang
  
 <h2>Description of How to Use the Program:</h2>
 
-The program is primarily stored in the file: time.py. Edit the code on lines 146 and 147 to select the twitter handle you want to analyze and the number of tweets you want to be analyzed. The code will not run if you do not enter in the proper credential information. Enter your twitter keys in the file twitter_codes.py and they will be imported to time.py file. In the terminal you are working in type "export GOOGLE_APPLICATION_CREDENTIALS = 'PATH'" where 'PATH' is the path to where your google credentials are stored in the computer. In the terminal if you type "python time.py" it should output your time trend sentiment graph for the twitter handle you provided.
+The program is primarily stored in the file: time.py. Edit the code on lines 146 and 147 to select the twitter handle you want to analyze and the number of tweets you want to be analyzed. The code will not run if you do not enter in the proper credential information. Enter your twitter keys in the file twitter_codes.py and they will be imported to time.py file. In the terminal you are working in type "export GOOGLE_APPLICATION_CREDENTIALS = 'PATH'" where 'PATH' is the path to where your google credentials are stored in the computer. In the terminal if you type "python time.py" it will output your time trend sentiment graph for the twitter handle you provided and the average sentiment for the tweets pulled.
 
 ![image](https://github.com/mbu54/mini1/blob/master/Trump500Tweets.png)
 
-This is a sample output of the program for the handle: @realDonaldTrump pulling his last 500 tweets.
+This is a sample output of the program for the handle: @realDonaldTrump pulling his last 500 tweets. The program will also output the average sentiment of the twitter handle in the terminal.
 
 <h2>Architecture and Flowchart:</h2>
  
