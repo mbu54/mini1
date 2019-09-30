@@ -10,16 +10,22 @@ With the development of Internet, millions of web users spend hours a day on the
 In order to get different sentiment orientation of posts, we need to apply the sentiment analysis approach, whose one of purposes is to classify the attitude expressed in the text (such as positive or negative) [8]In order to get different sentiment orientation of posts, we need to apply the sentiment analysis approach, whose one of purposes is to classify the attitude expressed in the text (such as positive or negative) [8]
 
 <h2>User Story:</h2>
-The MVP in this project is to get sentiment analysis in a time period and using statistic method to analysis people’s altitude towards specific heat points and how their sentiments changes over time.
+The MVP in this project is to get sentiment analysis in a time period and analysis people’s sentiments changes over time. This is of particular interest for public figures to see how their sentiment changes over time and how people view the public figures.
 
 <h2>Target Users:</h2>
-This tool is designed for people who want to analyze people’s altitude towards specific topic. Politician could change their election strategies according to the sentiment analysis result; movie actor/actress can evaluate his/her performance by the commits on Twitter. 
+This tool is designed for people who want to analyze a specific person’s change over time. You could track how a specific politician's sentiment changes throughout their campaign or time in office. With more commputing power, the program could easily be changed to analyze how people twitter view Politician's. Politician could change their election strategies according to the sentiment analysis result; movie actor/actress can evaluate his/her performance by the comments on Twitter. 
 
 <h2>User Story:</h2>
- 1.As a politician (Trump, Democratic prez candidate, etc.), I want to be able to track the live twitter reaction during       a big public event like a debate or press conference.  
+ 1. As a politician (Trump, Democratic Prez Candidate, etc.), I want to be able to track the live twitter reaction during a big public event like a debate or press conference.  
  
- 2.As a star sports player (football- Tom Brady, Basketball- Lebron James, Soccer- Messi) I want to be able to track the live twitter reaction during a game/season.
+ 2. As a star sports player (Football- Tom Brady, Basketball- Lebron James, Soccer- Messi) I want to be able to track the live twitter reaction during a game/season.
  
+ 3. As a political rival I want to be able to track how my opponent's sentiment changes overtime to see if our strategies affecting them. 
+ 
+<h2>Description of How to Use the Program:</h2>
+
+The program is primarily stored in the file: time.py. Edit the code on lines 146 and 147 to select the twitter handle you want to analyze and the number of tweets you want to be analyzed. The code will not run if you do not enter in the proper credential information. Enter your twitter keys in the file twitter_codes.py and they will be imported to time.py file. In the terminal you are working in type "export GOOGLE_APPLICATION_CREDENTIALS = 'PATH'" where 'PATH' is the path to where your google credentials are stored in the computer. In the terminal if you type "python time.py" it should output your time trend sentiment graph for the twitter handle you provided.
+
 <h2>Architecture&Flowchart:</h2>
  
 
